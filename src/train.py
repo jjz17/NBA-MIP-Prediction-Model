@@ -12,6 +12,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.feature_selection import RFE
 from sklearn.tree import DecisionTreeRegressor
 import _pickle as cPickle
+import joblib
 
 
 data = pd.read_csv(f'..{os.path.sep}data{os.path.sep}wrangled_data.csv')
@@ -114,6 +115,10 @@ select = RFE(DecisionTreeRegressor(random_state = 3000), n_features_to_select = 
 
 # Fit the RFE selector to the training data
 select.fit(X_train_scaled, y_train)
+
+# Export scaler
+scaler_filename = f'..{os.path.sep}models{os.path.sep}nba_minmax_scaler'
+joblib.dump(scaler, scaler_filename)
 
 # Transform training and testing sets so only the selected features are retained
 X_train_scaled_selected = select.transform(X_train_scaled)
