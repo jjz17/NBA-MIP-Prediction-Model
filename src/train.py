@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.feature_selection import RFE
 from sklearn.tree import DecisionTreeRegressor
+import _pickle as cPickle
 
 
 data = pd.read_csv(f'..{os.path.sep}data{os.path.sep}wrangled_data.csv')
@@ -200,3 +201,6 @@ for model_name, model in best_selected_features_models.items():
     print("\tMean-squared-error value for testing set: ",
           mean_squared_error(y_test, model.predict(X_test_selected_scaled)))
     print("\n")
+
+with open(f'..{os.path.sep}models{os.path.sep}knn_model.pickle', 'wb') as output_file:
+    cPickle.dump(best_models['k-Nearest Neighbor'], output_file)
