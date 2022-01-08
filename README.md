@@ -95,8 +95,8 @@ Conclusion...
 
 ## Contributors
 
-* [Kody Yuen](yuen.k@northeastern.edu)
-* [Corey An](an.co@northeastern.edu)
+* Kody Yuen @**yuen.k@northeastern.edu**
+* Corey An @**an.co@northeastern.edu**
 
 ## Project Structure
 
