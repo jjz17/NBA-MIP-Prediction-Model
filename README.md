@@ -87,26 +87,16 @@ We used three different models:
 
 After tuning, the kNN Regressor performed significantly better on the test and validation sets.
 
-* **Logistic Regression**: Accuracy = 0.8276
-* **kNN Classifier**: Accuracy = 0.8276
-* **Support Vector Machine**: Accuracy = 0.8276
-* **Gaussian Naive Bayes**: Accuracy = 0.8276
-* **Decision Tree**: Accuracy = 0.8276
+* **Ridge Regression**: Accuracy = 0.8276
+* **Lasso Regression**: Accuracy = 0.8276
+* **kNN Regressor**: Accuracy = 0.8276
 
-This led me to believe that one of the features was heavily influencing the outcome of the models, and I discovered that
-the first set winner feature was directly being used to predict the match winner. Thus, none of the other features were 
-creating additional insights.
-
-## Productionization
-
-In this step, I built a Streamlit API that was hosted on a local webserver by following along with the tutorial in the
-reference section above. The API takes in a first set play-by-play encoded string and computes match statistics and
-returns a prediction for the winner of the match.
+Conclusion...
 
 ## Contributors
 
-* [Kody Yuen]()
-* [Corey An]()
+* [Kody Yuen](yuen.k@northeastern.edu)
+* [Corey An](an.co@northeastern.edu)
 
 ## Project Structure
 
