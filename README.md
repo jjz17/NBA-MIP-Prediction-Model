@@ -62,9 +62,9 @@ After downloading the data, it required cleaning to be usable for our model. The
 We examined the distributions of the data and the value counts for the various quantitative and categorical variables.
 Below are a few highlights from the analysis.
 
-![alt text](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/blob/main/visualizations/s1_s2_points_win_relplot.png "First Set Points Colored By Winner")
-![alt text](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/blob/main/visualizations/correlation_heatmap.png "Correlations")
-![alt text](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/blob/main/visualizations/s1_s2_points_histogram.png "First Set Points Distribution")
+![alt text](https://github.com/jjz17/NBA-MIP-Prediction-Model/blob/main/visualizations/histogram.png "Distribution of Changes in Points Scored")
+![alt text](https://github.com/jjz17/NBA-MIP-Prediction-Model/blob/main/visualizations/pairplots.png "Various Stats against MIP win-shares")
+![alt text](https://github.com/jjz17/NBA-MIP-Prediction-Model/blob/main/visualizations/pca_scatter.png "PCA Dimensionality Reduction")
 
 ## Model Building
 
