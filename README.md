@@ -30,7 +30,7 @@ name and likeness, which can potentially generate significant profits.
 
 [comment]: <> (**For Web Framework Requirements:**  ```pip install -r requirements.txt```  )
 **Raw Dataset:** https://www.basketball-reference.com/leagues/NBA_2021_per_game.html  
-**Raw Dataset:** https://www.basketball-reference.com/awards/mip.html
+**Raw Dataset:** https://www.basketball-reference.com/awards/mip.html  
 **Raw Dataset:** https://www.basketball-reference.com/awards/awards_2021.html#mip
 
 ## Methods Used
