@@ -103,7 +103,7 @@ Conclusion...
 - raw dataset and preprocessed dataset are included under
   the [data](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/data) directory
 - model and scaler objects are included under
-  the [models](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/data) directory
+  the [models](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/models) directory
 - Jupyter Notebook work is included under
   the [notebooks](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/notebooks) directory
 - all source code (data wrangling, exploratory data analysis, model building, custom functions) is included under
