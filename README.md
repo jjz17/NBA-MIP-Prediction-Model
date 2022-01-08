@@ -1,35 +1,27 @@
 # NBA Most-Improved-Player Prediction Model
 ML Model to predict the likelihood of winning the Most-Improved-Player Award for a given NBA player
 
-#### -- Project Status: Active
+#### -- Project Status: Completed
 
 ## Project Description
 
-* Created a tool that estimates the MIP-win-shares (r<sup>2</sup> ~ 0.164)
-
-[comment]: <> (* Engineered features from the play-by-play records of first sets to quantify player performance)
-
-[comment]: <> (* Performed recursive feature selection to separate most relevant features)
-
-[comment]: <> (* Optimized Logistic Regression, kNN, Decision Trees, Naive Bayes, Linear SVM using GridsearchCV to reach the best)
-
-[comment]: <> (  model.)
-
-[comment]: <> (* Built a client facing API using streamlit)
+* Created a tool that estimates the MIP win-shares (r<sup>2</sup> ~ 0.164)
+* Engineered new dataset that quantifies changes in player performance between consecutive seasons (in order to gauge improvement)
+* Performed recursive feature selection to separate most relevant features
+* Optimized Ridge Regression, Lasso Regression, and kNN Regression using GridsearchCV to reach the best model.
 
 ## Purpose/Objective
 
-[comment]: <> (The purpose of this project is to build a Classification Machine Learning model that can predict the outcome &#40;winner&#41; of)
-
-[comment]: <> (a tennis match, given the play-by-play data of the first set. The target applications of this model are widespread: it)
-
-[comment]: <> (can be leveraged as an informative resource for sports-betting, a guide to players and coaches on the improvements that)
-
-[comment]: <> (will maximize winning potential, and much more. While the model is currently trained on data from professional men's)
-
-[comment]: <> (tennis matches, it can be expanded in the future for compatibility with the women's tour and even for)
-
-[comment]: <> (recreational/casual players.)
+The purpose of this project is to build a Regression Machine Learning model that can estimate the MIP win-shares of
+an NBA player in their current season, given data of their change in performance from the previous season. The target 
+applications of this model are widespread: we are essentially trying to predict the next breakout star. Quantifying the 
+likelihood and projection for a player’s improvement plays a factor in the free agent market of every team. A team can 
+assess the risk of signing a particular player to a contract in hopes that they will play better than anticipated, 
+making their contract a great value. Projecting who will be the next breakout player also plays a factor in sports 
+gambling. If your model projects that a certain player is on an upwards trend and you believe that sportsbooks have them
+undervalued, you can leverage this information. Furthermore, sportswear companies such as Nike and Adidas can use this 
+information to identify and sign the next up-and-coming star player in order to market their products with the player's 
+name and likeness, which can potentially generate significant profits.
 
 ## Code and Resources Used
 
@@ -50,13 +42,10 @@ ML Model to predict the likelihood of winning the Most-Improved-Player Award for
 
 ## Data Collection and Cleaning
 
-I acquired match data
-from [Jeff Sackmann's Github](https://github.com/JeffSackmann/tennis_pointbypoint/blob/master/pbp_matches_atp_qual_current.csv)
-.
+Player and award data was acquired from [Basketball Reference](https://www.basketball-reference.com/).
 \
 \
-After downloading the data, I needed to clean it up so that it was usable for our model. I made the following changes
-and created the following variables:
+After downloading the data, it required cleaning to be usable for our model. The following changes were made:
 
 * Removed matches from Wimbledon's Final Round Qualifying (they have different rules)
 * Parsed the 'play-by-play' strings into useful statistics with custom functions that extract relevant data (points,
@@ -70,8 +59,8 @@ and created the following variables:
 
 ## EDA
 
-I looked at the distributions of the data and the value counts for the various quantitative and categorical variables.
-Below are a few highlights from my analysis.
+We examined the distributions of the data and the value counts for the various quantitative and categorical variables.
+Below are a few highlights from the analysis.
 
 ![alt text](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/blob/main/visualizations/s1_s2_points_win_relplot.png "First Set Points Colored By Winner")
 ![alt text](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/blob/main/visualizations/correlation_heatmap.png "Correlations")
@@ -79,28 +68,24 @@ Below are a few highlights from my analysis.
 
 ## Model Building
 
-First, I split the data into train and tests sets with a test size of 25%.
+First, we split the data into train and tests sets with a test size of 25%.
 
-I tried five different models and evaluated them using mean accuracy. I chose mean accuracy because it is relatively
-easy to interpret and the data is fairly balanced so mean accuracy provides an accurate measure for model performance.
+We tried three different models and evaluated them using the coefficient of determination (r<sup>2</sup>). We chose 
+r<sup>2</sup> because it is relatively easy to interpret and NOT DONE YET
 
-I also performed recursive feature elimination to select the most relevant features
+We also performed recursive feature elimination to select the most relevant features
 
-Finally, I used GridSearchCV to perform hyperparameters tuning
+Finally, we used GridSearchCV to perform hyperparameters tuning
 
-I used five different models:
+We used three different models:
 
-* **Logistic Regression** – Highly efficient to train and classify new instances, easy to interpret.
-* **kNN Classifier** – Intuitive algorithm and makes no assumptions about the data and its distribution.
-* **Support Vector Machine** – Effective for classification in high dimensional spaces.
-* **Gaussian Naive Bayes** – Similar to Logistic Regression, highly efficient to train and classify new instances, easy
-  to interpret.
-* **Decision Tree** – Similar to kNN Classifier, intuitive algorithm and makes no assumptions about the data and its
-  distribution.
+* **Ridge Regression** – Highly efficient to train and classify new instances, easy to interpret.
+* **Lasso Regression** - 
+* **kNN Regressor** – Intuitive algorithm and makes no assumptions about the data and its distribution.
 
 ## Model performance
 
-After tuning, all of the models had equal performance on the test and validation sets.
+After tuning, the kNN Regressor performed significantly better on the test and validation sets.
 
 * **Logistic Regression**: Accuracy = 0.8276
 * **kNN Classifier**: Accuracy = 0.8276
@@ -117,6 +102,11 @@ creating additional insights.
 In this step, I built a Streamlit API that was hosted on a local webserver by following along with the tutorial in the
 reference section above. The API takes in a first set play-by-play encoded string and computes match statistics and
 returns a prediction for the winner of the match.
+
+## Contributors
+
+* [Kody Yuen]()
+* [Corey An]()
 
 ## Project Structure
 
