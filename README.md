@@ -101,12 +101,12 @@ Conclusion...
 ## Project Structure
 
 - raw dataset and preprocessed dataset are included under
-  the [data](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/tree/main/data) directory
+  the [data](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/data) directory
 - model and scaler objects are included under
-  the [models](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/tree/main/models) directory
+  the [models](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/data) directory
 - Jupyter Notebook work is included under
-  the [notebooks](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/tree/main/notebooks) directory
+  the [notebooks](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/notebooks) directory
 - all source code (data wrangling, exploratory data analysis, model building, custom functions) is included under
-  the [src](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/tree/main/src) directory
+  the [src](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/src) directory
 - produced visualizations are included under
-  the [visualizations](https://github.com/jjz17/Tennis-Match-Outcome-Prediction/tree/main/visualizations) directory
+  the [visualizations](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/visualizations) directory
