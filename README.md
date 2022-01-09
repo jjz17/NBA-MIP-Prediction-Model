@@ -1,7 +1,7 @@
 # NBA Most-Improved-Player Prediction Model
 ML Model to predict the likelihood of winning the Most-Improved-Player Award for a given NBA player
 
-#### -- Project Status: Completed
+#### -- Project Status: Active
 
 ## Project Description
 
@@ -47,6 +47,7 @@ Player and award data was acquired from [Basketball Reference](https://www.baske
 \
 After downloading the data, it required cleaning to be usable for our model. The following changes were made:
 
+* NOT DONE
 * Removed matches from Wimbledon's Final Round Qualifying (they have different rules)
 * Parsed the 'play-by-play' strings into useful statistics with custom functions that extract relevant data (points,
   aces, breaks).
