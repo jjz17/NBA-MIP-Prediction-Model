@@ -87,9 +87,9 @@ We used three different models:
 
 After tuning, the kNN Regressor performed significantly better on the test and validation sets.
 
-* **Ridge Regression**: Accuracy = 0.8276
-* **Lasso Regression**: Accuracy = 0.8276
-* **kNN Regressor**: Accuracy = 0.8276
+* **Ridge Regression**: r<sup>2</sup> = 0.050, MSE = 0.00178
+* **Lasso Regression**: r<sup>2</sup> = -3.608e-05, MSE = 0.00187
+* **kNN Regressor**: r<sup>2</sup> = 0.165, MSE = 0.00156
 
 Conclusion...
 
