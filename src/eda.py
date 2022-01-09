@@ -12,6 +12,9 @@ from sklearn.manifold import TSNE
 
 data = pd.read_csv(f'..{os.path.sep}data{os.path.sep}wrangled_data.csv')
 
+# Shape of Dataset
+print(data.shape)
+
 features = data.drop(['Season', 'Outcome', 'Player'], axis=1)
 target = data['Outcome']
 

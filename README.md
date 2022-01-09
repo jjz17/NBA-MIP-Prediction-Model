@@ -53,7 +53,7 @@ After downloading the data, it required cleaning to be usable for our model. The
 * Created a list of numerical features in the dataset
 * Used custom functions to create a new dataset of performance changes between subsequent seasons
 * Inserted continuous MIP win-shares values for each corresponding player entry
-* Resulted with 925 samples and 23 features.
+* Resulted with 7606 samples and 27 features.
 
 ## EDA
 
