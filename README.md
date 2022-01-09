@@ -107,6 +107,7 @@ Conclusion...
   the [models](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/models) directory
 - Jupyter Notebook work is included under
   the [notebooks](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/notebooks) directory
+- produced presentation is included under the [presentation](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/presentation) directory
 - all source code (data wrangling, exploratory data analysis, model building, custom functions) is included under
   the [src](https://github.com/jjz17/NBA-MIP-Prediction-Model/tree/main/src) directory
 - produced visualizations are included under
