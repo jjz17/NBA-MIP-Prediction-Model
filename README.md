@@ -48,14 +48,11 @@ Player and award data was acquired from [Basketball Reference](https://www.baske
 After downloading the data, it required cleaning to be usable for our model. The following changes were made:
 
 * NOT DONE
-* Removed matches from Wimbledon's Final Round Qualifying (they have different rules)
-* Parsed the 'play-by-play' strings into useful statistics with custom functions that extract relevant data (points,
-  aces, breaks).
-* Feature engineered momentum to quantify trends not explicit in the data (based on consecutive points won)
-* Made a new column for points scored for each player
-* Made a new column for momentum accumulated for each player
-* Made a new column for breaks won for each player
-* Made a new column for aces served for each player
+* Filled NA values with 0
+* Created a list of unique player names
+* Created a list of numerical features in the dataset
+* Used custom functions to create a new dataset of performance changes between subsequent seasons
+* Inserted continuous MIP win-shares values for each corresponding player entry
 * Resulted with 925 samples and 23 features.
 
 ## EDA
