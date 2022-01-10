@@ -5,7 +5,7 @@ ML Model to predict the likelihood of winning the Most-Improved-Player Award for
 
 ## Project Description
 
-* Created a tool that estimates the MIP win-shares (r<sup>2</sup> ~ 0.164)
+* Created a tool that estimates the MIP win-shares (r<sup>2</sup> ~ 0.165)
 * Engineered new dataset that quantifies changes in player performance between consecutive seasons (in order to gauge improvement)
 * Performed recursive feature selection to separate most relevant features
 * Optimized Ridge Regression, Lasso Regression, and kNN Regression using GridsearchCV to reach the best model.
