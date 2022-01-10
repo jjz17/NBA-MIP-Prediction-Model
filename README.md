@@ -77,8 +77,8 @@ Finally, we used GridSearchCV to perform hyperparameters tuning
 
 We used three different models:
 
-* **Ridge Regression** – Prevents overfitting with L1 regularization
-* **Lasso Regression** - Performs automatic feature selection with L2 regularization.
+* **Ridge Regression** – Prevents overfitting with L2 regularization
+* **Lasso Regression** - Performs automatic feature selection with L1 regularization.
 * **kNN Regressor** – Intuitive algorithm and makes no assumptions about the data and its distribution.
 
 ## Model performance
