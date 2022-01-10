@@ -90,6 +90,8 @@ After tuning, the kNN Regressor performed significantly better on the test and v
 * **kNN Regressor**: r<sup>2</sup> = 0.165, MSE = 0.00156
 
 Conclusion...
+We conclude that there is a non-linear relationship between the faetures and the target. The kNN Regressor shows promise and may be applied for even more accurate predictions.
+Furthermore, additional features could be considered (advanced stats, etc.) and more advanced ML algorithms.
 
 ## Contributors
 
