@@ -69,7 +69,7 @@ Below are a few highlights from the analysis.
 First, we split the data into train and tests sets with a test size of 25%.
 
 We tried three different models and evaluated them using the coefficient of determination (r<sup>2</sup>). We chose 
-r<sup>2</sup> because it is relatively easy to interpret and NOT DONE YET
+r<sup>2</sup> because it is relatively easy to interpret and it can also guide us to avoid overfitting the model.
 
 We also performed recursive feature elimination to select the most relevant features
 
