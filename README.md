@@ -47,7 +47,6 @@ Player and award data was acquired from [Basketball Reference](https://www.baske
 \
 After downloading the data, it required cleaning to be usable for our model. The following changes were made:
 
-* NOT DONE
 * Filled NA values with 0
 * Created a list of unique player names
 * Created a list of numerical features in the dataset
