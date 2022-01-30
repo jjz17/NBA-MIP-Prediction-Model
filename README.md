@@ -1,7 +1,7 @@
 # NBA Most-Improved-Player Prediction Model
 ML Model to predict the Most-Improved-Player win-shares received by a given NBA player
 
-#### -- Project Status: Active
+#### -- Project Status: Completed
 
 ## Project Description
 
